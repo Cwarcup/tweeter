@@ -22,3 +22,15 @@ This repository is the starter code for the project: Students will fork and clon
 - `server/index.js`: determines how `index.html` is served by Express. 
 - `./lib/in-memory-db`: object with an array of tweets.
 - `./lib/data-helpers.js`: provide interface for accessing the in-memory database (tweets). Function accepts `db` as an argument.
+
+---
+
+- Uses flexbox for layout.
+- Responsive design.
+
+
+---
+
+Is a **single-page** Twitter clone.
+
+has one single request from the backend, code is brought to the frontend.
