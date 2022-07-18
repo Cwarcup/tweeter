@@ -10,14 +10,18 @@ nav {
   font-size: 1.5em;
 }
 
+nav span {
+  padding-top: 25px;
+}
+
 .header-right {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: light 300;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-weight: lighter;
-  font-size: 25px
+  font-size: 25px;
 }
 
 .header-right p {
@@ -25,4 +29,8 @@ nav {
 }
 .fa-angles-down {
   color: red
+}
+
+.bold {
+  font-weight: bold;
 }
