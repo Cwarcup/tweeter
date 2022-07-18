@@ -1,0 +1,16 @@
+header {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D79B21;
+  padding-top: 120px;
+}
+
+header div .username {
+  margin: 0 10px;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
