@@ -34,3 +34,14 @@ This repository is the starter code for the project: Students will fork and clon
 Is a **single-page** Twitter clone.
 
 has one single request from the backend, code is brought to the frontend.
+
+
+---
+
+cURL
+
+```
+curl -X POST -d 'text=...' -H "Content-Type: application/x-www-form-urlencoded" http://localhost:8080/tweets
+```
+
+Sent to: http://localhost:8080/tweets
