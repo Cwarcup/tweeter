@@ -4,8 +4,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D79B21;
   padding-top: 120px;
+  background-color: #D79B21;
+  background-image: url("/images/asfalt-light.png");
 }
 
 header div .username {
