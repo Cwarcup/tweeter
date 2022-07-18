@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+### Structure of the project
+
+- `server/index.js`: determines how `index.html` is served by Express. 
+- `./lib/in-memory-db`: object with an array of tweets.
+- `./lib/data-helpers.js`: provide interface for accessing the in-memory database (tweets). Function accepts `db` as an argument.
