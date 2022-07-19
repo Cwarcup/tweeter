@@ -22,7 +22,7 @@ article.tweet header {
   padding: 0 20px
 }
 
-header h4.name {
+header h4.fName {
   font-weight: 300;
 }
 
@@ -32,7 +32,7 @@ header p.username {
   opacity: 0.75;
 }
 
-header div.avatar {
+header div.left-content {
   display: flex;
   flex-direction: row;
   justify-content: center;

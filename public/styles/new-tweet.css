@@ -8,6 +8,7 @@
 .new-tweet {
   width: 95%;
   padding: 10px;
+  margin-bottom: 40px;
 }
 
 .new-tweet form {
