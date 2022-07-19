@@ -1,9 +1,17 @@
 $(function(){ 
   console.log("Client-side JS loaded");
 
+  // function to prevent cross-site scripting attacks
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   // create and return a new tweet element
   const createTweetElement = function(tweet) {
     const user = tweet.user;
+    
     return (
     `
       <article class="tweet">
@@ -12,12 +20,12 @@ $(function(){
             <div>
               <img src=${user.avatars}>
             </div>
-            <h4 class="fName">${user.name}</h4>
+            <h4 class="fName">${escape(user.name)}</h4>
           </div>
-          <p class="username">${user.handle}</p>
+          <p class="username">${escape(user.handle)}</p>
         </header>
         <p class="tweet-text">
-          ${tweet.content.text}
+          ${escape(tweet.content.text)}
         </p>
         <footer>
           <data>
