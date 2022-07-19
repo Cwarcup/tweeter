@@ -75,10 +75,8 @@ $(function(){
       $(".new-tweet").after(tweetElement);
     }
   }
-  // invoke renderTweets function
-  renderTweets(data);
 
-
+// create a new tweet
   // jquery to listen for new tweet button click
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
@@ -94,11 +92,29 @@ $(function(){
         console.log("data was sent to server");
         // clear the form
         $('#tweet-text').val('');
+        // render the new tweet in the list
+        loadTweets();
       },
       error: function(error) {
         console.log(error);
       }
     })
+
   })
 
+  // GET tweets from server
+  const loadTweets = function() {
+    $.ajax({
+      url: '/tweets',
+      type: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        renderTweets(data)
+      },
+      error: function(error) {
+        console.log(error);
+      }
+    })
+  }
+  loadTweets();
 });
