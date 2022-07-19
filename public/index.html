@@ -30,6 +30,9 @@
   <!-- new-tweet css -->
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+  <!-- tweet css -->
+  <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -65,17 +68,39 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <!-- new tweets -->
     <section class="new-tweet">
       <form action="/tweets/" method="POST">
         <label for="tweet-text">What are you humming about?</label>
-        <textarea rows='2' spellcheck="true" name="text" id="tweet-text"
-          placeholder="What are you humming about?"></textarea>
+        <textarea rows='2' spellcheck="true" name="text" id="tweet-text"></textarea>
         <div class="below-textarea">
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
+
+    <!-- handle displaying tweets -->
+    <article class="tweet">
+      <header>
+        <div class="avatar">
+          <div>
+            <img src="https://i.imgur.com/nlhLi3I.png">
+          </div>
+          <h4 class="name">Curtis Warcup</h4>
+        </div>
+        <p class="username">@curtiswarcup</p>
+      </header>
+      <p class="tweet-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa dolore a, quia sequi</p>
+      <footer>
+        <data>Date: July 18, 2022</data>
+        <div>
+          <i class="tweet-icon fa-solid fa-flag fa-xs"></i>
+          <i class="tweet-icon fa-solid fa-retweet fa-xs"></i>
+          <i class="tweet-icon fa-solid fa-heart fa-xs"></i>
+        </div>
+      </footer>
+    </article>
   </main>
 </body>
 

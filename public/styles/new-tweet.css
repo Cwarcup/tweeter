@@ -1,7 +1,8 @@
 .container {
   background-color: #f4f1ec;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .new-tweet {
@@ -19,6 +20,8 @@
 form label {
   color: #605D55;
   padding-bottom: 5px;
+  font-weight: bolder;
+  ;
 }
 
 textarea {
