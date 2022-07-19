@@ -60,30 +60,46 @@ $(function(){
   }
   // load tweets on page load
   loadTweets();
+
+  // check length of tweet
+  const validateTweet = function(tweet) {
+
+  }
   
 
   // create a new tweet
     // jquery to listen for new tweet button click
     $('#submit-tweet').submit(function(event) {
       event.preventDefault();
-      // data from new-tweet form
-      const tweetText = $('#submit-tweet').serialize()
-  
-      // create ajax POST request to /tweets
-      $.ajax({
-        url: '/tweets',
-        type: 'POST',
-        data: tweetText,
-        success: function(data) {
-          console.log("data was sent to server");
-          // clear the form
-          $('#tweet-text').val('');
-          // render the new tweet in the list
-          loadTweets();
-        },
-        error: function(error) {
-          console.log(error);
-        }
-      })
+
+      // get value from tweet textarea
+      const potentialTweet = $('#tweet-text').val();
+      // validation 
+      if (potentialTweet.length > 140) {
+        alert("Tweet is too long. Please limit to 140 characters.");
+      } else if (potentialTweet.length === 0 || potentialTweet === "" ) {
+        alert("Please enter a tweet.");
+      } else {
+
+        // data from new-tweet form
+        const tweetText = $('#submit-tweet').serialize()
+        
+        // create ajax POST request to /tweets
+        $.ajax({
+          url: '/tweets',
+          type: 'POST',
+          data: tweetText,
+          success: function(data) {
+            console.log("data was sent to server");
+            // clear the form
+            $('#tweet-text').val('');
+            // render the new tweet in the list
+            loadTweets();
+          },
+          error: function(error) {
+            console.log(error);
+          }
+        })
+      }
     })
 });
