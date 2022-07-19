@@ -9,6 +9,8 @@
   width: 95%;
   padding: 10px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .new-tweet form {
@@ -54,4 +56,38 @@ button {
   color: #F4F1EC;
   border: none;
   padding: 4px 10px
+}
+
+/* error message */
+
+.error-message {
+  transition: 0.3s ease-in-out;
+  align-self: center;
+  display: flex;
+  width: 50%;
+  min-height: 60px;
+  background: #F4F1EC;
+  border: 1px solid #b05150;
+  margin: 2rem 0;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message-icon {
+  background: #b05150;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-left: -1px;
+}
+
+.error-message p {
+  flex: 6;
+  padding-left: 1.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }

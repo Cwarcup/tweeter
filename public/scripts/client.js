@@ -69,11 +69,18 @@ $(function(){
   // load tweets on page load
   loadTweets();
 
-  // check length of tweet
-  const validateTweet = function(tweet) {
-
+  const errorMessage = function(message) {
+    return (
+      `
+      <div class="error-message">
+        <div class="error-message-icon">
+          <i class="fa-close fa-solid"></i>
+        </div>
+        <p>${message}</p>
+      </div>
+      `
+    )
   }
-  
 
   // create a new tweet
     // jquery to listen for new tweet button click
@@ -84,9 +91,12 @@ $(function(){
       const potentialTweet = $('#tweet-text').val();
       // validation 
       if (potentialTweet.length > 140) {
-        alert("Tweet is too long. Please limit to 140 characters.");
+        $('.new-tweet').before(errorMessage("Tweet is too long!"))
+
       } else if (potentialTweet.length === 0 || potentialTweet === "" ) {
-        alert("Please enter a tweet.");
+        const error = errorMessage("Tweet is empty!");
+        $('.new-tweet').before(errorMessage("You can't tweet nothing!"))
+
       } else {
 
         // data from new-tweet form
