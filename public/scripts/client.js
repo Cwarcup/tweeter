@@ -1,38 +1,5 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(function(){ 
   console.log("Client-side JS loaded");
-
-
-  // test code
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ]
 
   // create and return a new tweet element
   const createTweetElement = function(tweet) {
@@ -76,32 +43,7 @@ $(function(){
     }
   }
 
-// create a new tweet
-  // jquery to listen for new tweet button click
-  $('#submit-tweet').submit(function(event) {
-    event.preventDefault();
-    // data from new-tweet form
-    const tweetText = $('#submit-tweet').serialize()
-
-    // create ajax POST request to /tweets
-    $.ajax({
-      url: '/tweets',
-      type: 'POST',
-      data: tweetText,
-      success: function(data) {
-        console.log("data was sent to server");
-        // clear the form
-        $('#tweet-text').val('');
-        // render the new tweet in the list
-        loadTweets();
-      },
-      error: function(error) {
-        console.log(error);
-      }
-    })
-
-  })
-
+  
   // GET tweets from server
   const loadTweets = function() {
     $.ajax({
@@ -116,5 +58,32 @@ $(function(){
       }
     })
   }
+  // load tweets on page load
   loadTweets();
+  
+  
+  // create a new tweet
+    // jquery to listen for new tweet button click
+    $('#submit-tweet').submit(function(event) {
+      event.preventDefault();
+      // data from new-tweet form
+      const tweetText = $('#submit-tweet').serialize()
+  
+      // create ajax POST request to /tweets
+      $.ajax({
+        url: '/tweets',
+        type: 'POST',
+        data: tweetText,
+        success: function(data) {
+          console.log("data was sent to server");
+          // clear the form
+          $('#tweet-text').val('');
+          // render the new tweet in the list
+          loadTweets();
+        },
+        error: function(error) {
+          console.log(error);
+        }
+      })
+    })
 });
