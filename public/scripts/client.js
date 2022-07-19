@@ -21,7 +21,7 @@ $(function(){
         </p>
         <footer>
           <data>
-            ${tweet.created_at}
+            ${timeago.format(tweet.created_at)}
           </data>
           <div>
             <i class="tweet-icon fa-solid fa-flag fa-xs"></i>
@@ -61,7 +61,7 @@ $(function(){
   // load tweets on page load
   loadTweets();
   
-  
+
   // create a new tweet
     // jquery to listen for new tweet button click
     $('#submit-tweet').submit(function(event) {
