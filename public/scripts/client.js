@@ -80,38 +80,25 @@ $(function(){
 
 
   // jquery to listen for new tweet button click
-  // $("section.new-tweet button").on("click", function(event) {
-  //   console.log("new tweet button clicked");
-  //   event.preventDefault(); // prevents page from refreshing
-  //   //  create ajax POST request to /tweets
-  //   $.ajax('tweets', { method: 'POST'})
-  //   .then(function(data) {
-  //     console.log(data);
-  //   })
-  // })
-
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
-    console.log("new tweet button clicked");
-    // console.log('event: ', event.serialize());
+    // data from new-tweet form
     const tweetText = $('#submit-tweet').serialize()
-    console.log(tweetText);
+
+    // create ajax POST request to /tweets
     $.ajax({
       url: '/tweets',
       type: 'POST',
       data: tweetText,
       success: function(data) {
         console.log("data was sent to server");
+        // clear the form
+        $('#tweet-text').val('');
       },
       error: function(error) {
         console.log(error);
       }
-
     })
-    // $.ajax('/tweets', { method: 'POST'})
-    //   .then(function(data) {
-    //     console.log(data);
-    //   })
   })
 
 });
