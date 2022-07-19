@@ -23,6 +23,7 @@ article.tweet header {
 }
 
 header h4.fName {
+  padding-left: 10px;
   font-weight: 300;
 }
 
@@ -62,6 +63,7 @@ article.tweet footer {
 
 i.tweet-icon {
   color: #3F54A1;
+  padding: 0px 3px
 }
 
 i.fa-flag:hover {
