@@ -5,6 +5,7 @@ article {
   border: #605D55 3px solid;
   transition: box-shadow 0.3s ease-in-out;
   width: 95%;
+  margin: 10px 0
 }
 
 article:hover {

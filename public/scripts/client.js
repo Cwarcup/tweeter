@@ -38,47 +38,44 @@ const createTweetElement = function(tweet) {
   const user = tweet.user;
   return (
   `
-  <article class="tweet">
-  <header>
-    <div class="left-content">
-      <div>
-        <img src=${user.avatars}>
-      </div>
-      <h4 class="fName">${user.name}</h4>
-    </div>
-    <p class="username">${user.handle}</p>
-  </header>
-  <p class="tweet-text">
-    ${tweet.content.text}
-  </p>
-  <footer>
-    <data>
-      ${tweet.created_at}
-    </data>
-    <div>
-      <i class="tweet-icon fa-solid fa-flag fa-xs"></i>
-      <i class="tweet-icon fa-solid fa-retweet fa-xs"></i>
-      <i class="tweet-icon fa-solid fa-heart fa-xs"></i>
-    </div>
-  </footer>
-</article>
+    <article class="tweet">
+      <header>
+        <div class="left-content">
+          <div>
+            <img src=${user.avatars}>
+          </div>
+          <h4 class="fName">${user.name}</h4>
+        </div>
+        <p class="username">${user.handle}</p>
+      </header>
+      <p class="tweet-text">
+        ${tweet.content.text}
+      </p>
+      <footer>
+        <data>
+          ${tweet.created_at}
+        </data>
+        <div>
+          <i class="tweet-icon fa-solid fa-flag fa-xs"></i>
+          <i class="tweet-icon fa-solid fa-retweet fa-xs"></i>
+          <i class="tweet-icon fa-solid fa-heart fa-xs"></i>
+        </div>
+      </footer>
+    </article>
   `
   );
 }
 
 // loops through the array of tweets and creates a tweet element for each
 const renderTweets = function(tweets) {
-  for (let indivudalTweet of tweets) {
-    const tweetElement = createTweetElement(indivudalTweet);
-    $('#tweets-container').append(tweetElement);
+  for (let individualTweets of tweets) {
+
+    const tweetElement = createTweetElement(individualTweets);
+
+    // append after new tweet section
+    $(".new-tweet").after(tweetElement);
   }
 }
 
 renderTweets(data);
-
-// const $tweet = createTweetElement(tweetData);
-
-// // Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 });
