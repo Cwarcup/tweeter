@@ -1,3 +1,11 @@
+:root {
+  --headerBackgroundColor: #f4a261;
+  --backgroundColor: #e9c46a;
+  --primaryFontColor: #264653;
+  --secondaryFontColor: #2a9d8f;
+  --btnColor: #e76f51;
+}
+
 nav {
   /* nav at top */
   position: absolute;
@@ -33,7 +41,7 @@ nav {
 }
 
 .fa-angles-down {
-  color: red;
+  color: #e76f51
 }
 
 .header-right p {
@@ -52,6 +60,7 @@ nav {
 @media only screen and (min-width: 1024px) {
   nav {
     position: fixed;
-    background-color: #4056A1;
+    /* background-color: #4056A1; */
+    background-color: var(--primaryFontColor)
   }
 }
