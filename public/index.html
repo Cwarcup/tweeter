@@ -59,24 +59,24 @@
       </div>
     </header>
     <main class="container">
-      <div id='new-tweet-id' style="width: 100%">
-        <section class="new-tweet">
-          <div class="error-message">
-            <div class="error-message-icon">
-              <i class="fa-close fa-solid"></i>
-            </div>
-            <p class="error-text">Tweet is too long!</p>
+      <!-- <div style="width: 100%"> -->
+      <section class="new-tweet">
+        <div class="error-message">
+          <div class="error-message-icon">
+            <i class="fa-close fa-solid"></i>
           </div>
-          <form id="submit-tweet">
-            <label for="tweet-text">What are you humming about?</label>
-            <textarea rows='2' spellcheck="true" name="text" id="tweet-text"></textarea>
-            <div class="below-textarea">
-              <button type="submit">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text">140</output>
-            </div>
-          </form>
-        </section>
-      </div>
+          <p class="error-text">Tweet is too long!</p>
+        </div>
+        <form id="submit-tweet">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea rows='2' spellcheck="true" name="text" id="tweet-text"></textarea>
+          <div class="below-textarea">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <!-- </div> -->
       <div id="tweets-container"></div>
     </main>
   </div>
