@@ -121,9 +121,27 @@ $(function() {
     });
   });
 
-  // new tweet button
+  // 'write new tweet' button
   $('.new-tweet').hide();
   $('.header-right').click(() => {
     $('.new-tweet').slideToggle(600);
   });
+
+
+  // scroll to top button display when user scrolls down
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > 100) {
+      $('#scroll').fadeIn(200);
+    } else {
+      $('#scroll').fadeOut(200);
+    }
+  });
+
+  // scroll button click - jumps to top of page
+  $('#scroll').click(() => {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+
+
+  
 });
