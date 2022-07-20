@@ -11,7 +11,7 @@ article:hover {
   box-shadow: #605D55 3px 3px 3px;
 }
 
-article.tweet header {
+.single-tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,7 +50,7 @@ p.tweet-text {
 
 }
 
-article.tweet footer {
+.single-tweet footer {
   font-size: medium;
   display: flex;
   flex-direction: row;

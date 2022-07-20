@@ -59,11 +59,7 @@ main {
     margin-top: 200px;
   }
 
-  #content header {
-    padding: 0;
-  }
-
-  #content header {
+  #content .profile {
     height: 350px;
     width: 450px;
     padding: 0;

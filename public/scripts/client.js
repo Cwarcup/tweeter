@@ -13,7 +13,7 @@ $(function() {
     const user = tweet.user;
     return (
       `
-      <article class="tweet">
+      <article class="single-tweet">
         <header>
           <div class="left-content">
             <div>
