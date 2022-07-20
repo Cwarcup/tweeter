@@ -87,20 +87,31 @@ $(function(){
     $('#submit-tweet').submit(function(event) {
       event.preventDefault();
 
+      
+      $('#empty-tweet').slideUp()
+      $('#long-tweet').slideUp()
+      $('.new-tweet').slideUp()
+
+
       // get value from tweet textarea
-      const potentialTweet = $('#tweet-text').val();
+      const tweetData = event.target[0].value
+
       // validation 
-      if (potentialTweet.length > 140) {
-        $('.new-tweet').before(errorMessage("Tweet is too long!"))
+      if (!tweetData) {
+        $('#empty-tweet').slideDown()
+        $('.new-tweet').slideDown()
+        return;
+      };
 
-      } else if (potentialTweet.length === 0 || potentialTweet === "" ) {
-        const error = errorMessage("Tweet is empty!");
-        $('.new-tweet').before(errorMessage("You can't tweet nothing!"))
-
-      } else {
+      if (tweetData.length > 140) {
+        $('#long-tweet').slideDown()
+        $('.new-tweet').slideDown()
+        return;
+      };
+      
 
         // data from new-tweet form
-        const tweetText = $('#submit-tweet').serialize()
+      const tweetText = $('#submit-tweet').serialize()
         
         // create ajax POST request to /tweets
         $.ajax({
@@ -118,6 +129,7 @@ $(function(){
             console.log(error);
           }
         })
-      }
+
+    
     })
-});
+  })
