@@ -49,3 +49,22 @@ main {
   width: 100%;
 }
 
+/* @media only screen and (min-width: 1024px) {
+  #content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .container {
+    margin-top: 500px;
+  }
+
+  #content header {
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    margin: 150px 100px 0px 100px;
+  }
+} */
