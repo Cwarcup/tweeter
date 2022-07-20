@@ -66,30 +66,27 @@ $(function() {
   // load tweets on page load
   loadTweets();
 
+  // keep error message hidden until invalid tweet
+  $('.error-message').hide();
+  $('.error-text').text('');
 
   // submit new tweet
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
 
-    // clean up
-    $('#empty-tweet').slideUp();
-    $('#long-tweet').slideUp();
-    $('new-tweet').slideUp();
+    // cleanup if error message is already shown
+    $('.error-message').hide();
 
     // validation of tweets
     const tweetData = event.target[0].value; // get value from tweet textarea
     if (!tweetData) {
-      $('#empty-tweet').css('display', 'flex');
-      $('#empty-tweet').slideDown();
-      $('.new-tweet').slideDown();
-      return;
+      $('.error-text').text('Please enter a tweet');
+      return $('.error-message').slideDown(400);
     }
 
     if (tweetData.length > 140) {
-      $('#long-tweet').css('display', 'flex');
-      $('#long-tweet').slideDown();
-      $('.new-tweet').slideDown();
-      return;
+      $('.error-text').text('Tweet must be less than 140 characters');
+      return $('.error-message').slideDown(400);
     }
       
 
@@ -111,4 +108,9 @@ $(function() {
       }
     });
   });
+
+  // // new tweet button
+  // $('.header-right').click(() => {
+  //   $('.new-tweet').css('display', 'flex').slideDown(5000);
+  // });
 });
