@@ -1,3 +1,11 @@
+:root {
+  --headerBackgroundColor: #f4a261;
+  --backgroundColor: #F4E2B4;
+  --primaryFontColor: #264653;
+  --secondaryFontColor: #2a9d8f;
+  --btnColor: #e76f51;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -15,7 +23,7 @@ article:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #F4F1EC;
+  background-color: var(--backgroundColor);
   padding: 0px;
   margin: 15px 0px 25px 0px;
   height: auto;
@@ -30,8 +38,8 @@ header h4.fName {
 
 header p.username {
   font-weight: 600;
-  color: #C5CCE3;
-  opacity: 0.75;
+  color: var(--secondaryFontColor);
+  opacity: 0.55;
 }
 
 header div.left-content {
@@ -63,7 +71,7 @@ p.tweet-text {
 }
 
 i.tweet-icon {
-  color: #3F54A1;
+  color: var(--primaryFontColor);
   padding: 0px 3px
 }
 

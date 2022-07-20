@@ -1,6 +1,6 @@
 :root {
-  --headerBackgroundColor: #f4a261;
-  --backgroundColor: #e9c46a;
+  --headerBackgroundColor: #E9C46A;
+  --backgroundColor: #F4E2B4;
   --primaryFontColor: #264653;
   --secondaryFontColor: #2a9d8f;
   --btnColor: #e76f51;
@@ -13,7 +13,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  background-color: var(--headerBackgroundColor);
+  background-color: #E9C46A;
   background-image: url("/images/asfalt-light.png");
 }
 
@@ -34,4 +34,3 @@ header .profile {
   background-color: #D79B21;
   background-image: url("/images/asfalt-light.png");
 }
-
