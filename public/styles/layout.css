@@ -43,8 +43,6 @@ main {
 #tweets-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -57,14 +55,18 @@ main {
     justify-content: center;
   }
 
-  .container {
-    margin-top: 500px;
+  #content {
+    margin-top: 200px;
+  }
+
+  #content header {
+    padding: 0;
   }
 
   #content header {
     height: 100%;
     width: 300px;
-    padding: 20px;
-    margin: 150px 100px 0px 100px;
+    /* padding: 20px;
+    margin: 150px 100px 0px 100px; */
   }
 }

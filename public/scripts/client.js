@@ -45,7 +45,9 @@ $(function() {
   const renderTweets = function(tweets) {
     for (let individualTweets of tweets) {
       const tweetElement = createTweetElement(individualTweets);
-      $('.new-tweet').after(tweetElement);
+
+      $('#tweets-container').prepend(tweetElement);
+      // $('#tweets-container').prepend(tweetElement);
     }
   };
 
@@ -74,6 +76,7 @@ $(function() {
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
 
+
     // cleanup if error message is already shown
     $('.error-message').hide();
 
@@ -101,6 +104,8 @@ $(function() {
         // clear the form
         $('#tweet-text').val('');
         // render the new tweet in the list
+        $('#tweets-container').empty();
+
         loadTweets();
       },
       error: function(error) {
@@ -110,8 +115,11 @@ $(function() {
   });
 
   // new tweet button
-  $('.new-tweet').hide();
-  $('.header-right').click(() => {
-    $('.new-tweet').slideToggle(1800);
-  });
+  // $('.new-tweet').hide();
+  // $('.header-right').click(() => {
+  //   $('.new-tweet').slideToggle(1000, function() {
+  //     console.log('The slideDown() method is finished!');
+  //   });
+  // $('#new-tweet-id').slideToggle(500);
+  // });
 });

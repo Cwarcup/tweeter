@@ -4,7 +4,7 @@ article {
   align-items: center;
   border: #605D55 3px solid;
   transition: box-shadow 0.3s ease-in-out;
-  margin: 25px 0;
+  margin-bottom: 25px;
 }
 
 article:hover {
