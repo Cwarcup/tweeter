@@ -51,6 +51,8 @@ $(function() {
     }
   };
 
+
+
   // GET tweets from /tweets on server
   const loadTweets = function() {
     $.ajax({
@@ -68,14 +70,17 @@ $(function() {
   // load tweets on page load
   loadTweets();
 
+
+
   // keep error message hidden until invalid tweet
   $('.error-message').hide();
   $('.error-text').text('');
 
+
+
   // submit new tweet
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
-
 
     // cleanup if error message is already shown
     $('.error-message').hide();
@@ -115,11 +120,8 @@ $(function() {
   });
 
   // new tweet button
-  // $('.new-tweet').hide();
-  // $('.header-right').click(() => {
-  //   $('.new-tweet').slideToggle(1000, function() {
-  //     console.log('The slideDown() method is finished!');
-  //   });
-  // $('#new-tweet-id').slideToggle(500);
-  // });
+  $('.new-tweet').hide();
+  $('.header-right').click(() => {
+    $('.new-tweet').slideToggle(600);
+  });
 });
