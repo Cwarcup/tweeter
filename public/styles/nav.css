@@ -23,6 +23,8 @@ nav {
   align-items: center;
   gap: 10px;
   font-size: 25px;
+  cursor: pointer;
+
 }
 
 

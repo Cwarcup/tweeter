@@ -54,7 +54,15 @@ button {
   background-color: #4056A2;
   color: #F4F1EC;
   border: none;
-  padding: 4px 10px
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 /* error message */
