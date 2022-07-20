@@ -28,6 +28,7 @@ nav span {
   font-size: 25px;
 }
 
+
 .header-right p {
   margin: 0;
 }
@@ -35,6 +36,13 @@ nav span {
 .fa-angles-down {
   color: red
 }
+
+
+.header-right:hover > .fa-angles-down {
+  transition: all 800ms ease;
+  transform: translateY(20px);
+}
+
 
 .bold {
   font-weight: bold;

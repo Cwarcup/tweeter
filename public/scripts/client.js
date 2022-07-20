@@ -109,9 +109,6 @@ $(function() {
     });
   });
 
-  // $('section.new-tweet').each(function() {
-  //   $(this).css('height', $(this).height());
-  // });
   // new tweet button
   $('.new-tweet').hide();
   $('.header-right').click(() => {
