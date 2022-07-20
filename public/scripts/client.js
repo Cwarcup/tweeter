@@ -109,8 +109,12 @@ $(function() {
     });
   });
 
-  // // new tweet button
-  // $('.header-right').click(() => {
-  //   $('.new-tweet').css('display', 'flex').slideDown(5000);
+  // $('section.new-tweet').each(function() {
+  //   $(this).css('height', $(this).height());
   // });
+  // new tweet button
+  $('.new-tweet').hide();
+  $('.header-right').click(() => {
+    $('.new-tweet').slideToggle(1800);
+  });
 });

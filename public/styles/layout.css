@@ -34,6 +34,10 @@ main {
   height: 100vh;
   background-color: #f4f1ec;
   color: #545149;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #tweets-container {
@@ -44,3 +48,4 @@ main {
   height: 100%;
   width: 100%;
 }
+
