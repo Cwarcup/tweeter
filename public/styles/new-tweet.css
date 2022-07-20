@@ -61,9 +61,8 @@ button {
 /* error message */
 
 .error-message {
-  transition: 0.3s ease-in-out;
+  display: none;
   align-self: center;
-  display: flex;
   width: 50%;
   min-height: 60px;
   background: #F4F1EC;
