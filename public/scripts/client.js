@@ -1,9 +1,9 @@
 $(function() {
-  console.log('Client-side JS loaded');
-
   // function to prevent cross-site scripting attacks
   const escape = function(str) {
+    // eslint-disable-next-line
     let div = document.createElement('div');
+    // eslint-disable-next-line
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
@@ -11,7 +11,6 @@ $(function() {
   // create and return a new tweet element
   const createTweetElement = function(tweet) {
     const user = tweet.user;
-    
     return (
       `
       <article class="tweet">
@@ -46,13 +45,11 @@ $(function() {
   const renderTweets = function(tweets) {
     for (let individualTweets of tweets) {
       const tweetElement = createTweetElement(individualTweets);
-      // append after new tweet section
       $('.new-tweet').after(tweetElement);
     }
   };
 
-  
-  // GET tweets from server
+  // GET tweets from /tweets on server
   const loadTweets = function() {
     $.ajax({
       url: '/tweets',
@@ -69,19 +66,18 @@ $(function() {
   // load tweets on page load
   loadTweets();
 
-  // create a new tweet
+
+  // submit new tweet
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
 
+    // clean up
     $('#empty-tweet').slideUp();
     $('#long-tweet').slideUp();
     $('new-tweet').slideUp();
 
-
-    // get value from tweet textarea
-    const tweetData = event.target[0].value;
-
-    // validation
+    // validation of tweets
+    const tweetData = event.target[0].value; // get value from tweet textarea
     if (!tweetData) {
       $('#empty-tweet').css('display', 'flex');
       $('#empty-tweet').slideDown();
@@ -96,16 +92,15 @@ $(function() {
       return;
     }
       
-    // data from new-tweet form
+
+    // create ajax POST request to /tweets
     const tweetText = $('#submit-tweet').serialize();
         
-    // create ajax POST request to /tweets
     $.ajax({
       url: '/tweets',
       type: 'POST',
       data: tweetText,
       success: function() {
-        console.log('data was sent to server');
         // clear the form
         $('#tweet-text').val('');
         // render the new tweet in the list
