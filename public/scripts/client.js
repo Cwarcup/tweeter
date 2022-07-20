@@ -81,6 +81,7 @@ $(function() {
   // submit new tweet
   $('#submit-tweet').submit(function(event) {
     event.preventDefault();
+    
 
     // cleanup if error message is already shown
     $('.error-message').hide();
@@ -110,7 +111,8 @@ $(function() {
         $('#tweet-text').val('');
         // render the new tweet in the list
         $('#tweets-container').empty();
-
+        $('.new-tweet').hide();
+        $('.counter').text(140);
         loadTweets();
       },
       error: function(error) {
