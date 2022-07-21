@@ -81,11 +81,11 @@ button:hover {
 }
 
 .error-message-icon {
-  background: #e76f51;
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
+  background: #e76f51;
+  flex: 1;
   color: #F4F1EC;
   font-size: 1.6rem;
   margin: 0;

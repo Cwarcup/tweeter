@@ -3,9 +3,13 @@ $BorderColor: #605D55;
 $DarkOrange: #e76f51;
 $NeutralWhite: #F4F1EC;
 
-.container {
+@mixin flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  @include flex-col;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
@@ -13,15 +17,13 @@ $NeutralWhite: #F4F1EC;
 }
 
 .new-tweet {
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   width: 100%;
   padding: 0px 10px 20px 10px;
 }
 
 #submit-tweet {
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   background-color: $BgLightOrange;
 }
 
@@ -90,11 +92,11 @@ button {
 }
 
 .error-message-icon {
-  background: $DarkOrange;
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
+  background: $DarkOrange;
+  flex: 1;
   color: $NeutralWhite;
   font-size: 1.6rem;
   margin: 0;
