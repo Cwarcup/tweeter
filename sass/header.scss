@@ -1,7 +1,6 @@
-$BgLightOrange: #E9C46A;
+$BgDarkOrange: #E9C46A;
 
-
-@mixin height-width {
+header {
   height: 520px;
   width: 100%;
   display: flex;
@@ -9,11 +8,7 @@ $BgLightOrange: #E9C46A;
   align-items: center;
   padding-top: 120px;
   background-image: url("/images/asfalt-light.png");
-}
-
-header {
-  @include height-width;
-  background-color: $BgLightOrange;
+  background-color: $BgDarkOrange;
 }
 
 header div .username {

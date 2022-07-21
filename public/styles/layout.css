@@ -17,11 +17,11 @@ body {
 }
 
 main {
+  display: flex;
   margin: 0 5%;
   background-color: #F4E2B4;
-  color: #264653;
-  display: flex;
   flex-direction: column;
+  color: #264653;
   align-items: center;
   justify-content: center;
 }

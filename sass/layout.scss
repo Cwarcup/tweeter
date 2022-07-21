@@ -8,21 +8,23 @@ html {
   box-sizing: inherit;
 }
 
+$BgLightOrange: #F4E2B4;
+$FontDarkBlue: #264653;
 
 body {
-  color: #264653;
-  background-color: #F4E2B4;
+  color: $FontDarkBlue;
+  background-color: $BgLightOrange;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: light 300;
 }
 
 main {
-  margin: 0 5%;
-  background-color: #F4E2B4;
-  color: #264653;
   display: flex;
+  margin: 0 5%;
+  background-color: $BgLightOrange;
   flex-direction: column;
+  color: $FontDarkBlue;
   align-items: center;
   justify-content: center;
 }
