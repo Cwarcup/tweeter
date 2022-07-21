@@ -14,13 +14,13 @@ $BgDarkOrange: #e76f51;
   font-size: 18px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-}
 
-#scroll i {
-  padding: 0 4px;
-}
+  i {
+    padding: 0 4px;
+  }
 
-#scroll:hover {
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.75);
-  transform: scale(1.1);
+  &:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+  }
 }
