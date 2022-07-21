@@ -1,24 +1,35 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "name": "Gilligan",
+      "avatars": "/images/avatars/man3.png",
+      "handle": "@gilly"
+    },
+    "content": {
+      "text": "Man, how the heck do you center a div?"
+    },
+    "created_at": 1658102057497
+  },
+  {
+    "user": {
+      "name": "Jon",
+      "avatars": "/images/avatars/man1.png",
+      "handle": "@SirJon"
     },
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1658182335947
+    "created_at": 1658188457497
   },
   {
     "user": {
       "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "avatars": "/images/avatars/woman2.png",
       "handle": "@rd"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Does anyone else always get stuck in vim? I had to buy a new computer to get out of it."
     },
-    "created_at": 1658268735947
+    "created_at": 1658274857497
   }
 ]
