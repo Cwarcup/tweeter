@@ -12,8 +12,7 @@ nav {
   z-index: 1;
   font-family: "Bungee", sans-serif;
 }
-
-.header-right {
+nav .header-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,24 +22,18 @@ nav {
   font-family: "Source Sans Pro", sans-serif;
   cursor: pointer;
 }
-
-.header-right p {
+nav .header-right p {
   margin: 0;
+  -webkit-transition: padding 0.5s ease-in-out;
 }
-
-.fa-angles-down {
+nav .header-right p:hover {
+  padding-bottom: 15px;
+}
+nav .header-right .fa-angles-down {
   color: #e76f51;
 }
 
-.header-right p {
-  -webkit-transition: padding 0.5s ease-in-out;
-}
-
-.header-right p:hover {
-  padding-bottom: 15px;
-}
-
-.bold {
+span {
   font-weight: bold;
 }
 
