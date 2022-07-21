@@ -1,0 +1,88 @@
+:root {
+  --headerBackgroundColor: #f4a261;
+  --backgroundColor: #F4E2B4;
+  --primaryFontColor: #264653;
+  --secondaryFontColor: #2a9d8f;
+  --btnColor: #e76f51;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #605D55 3px solid;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 25px;
+}
+
+article:hover {
+  box-shadow: #605D55 3px 3px 3px;
+}
+
+.single-tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--backgroundColor);
+  padding: 0px;
+  margin: 15px 0px 5px 0px;
+  height: auto;
+  width: 100%;
+  padding: 0 20px
+}
+
+header h4.fName {
+  padding-left: 10px;
+  font-weight: 300;
+}
+
+header p.username {
+  font-weight: 600;
+  color: var(--secondaryFontColor);
+  opacity: 0.55;
+}
+
+header div.left-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p.tweet-text {
+  margin: 0 35px;
+  color: #3d3c37;
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  align-self: flex-start;
+}
+
+.single-tweet footer {
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  width: 98%;
+  border-top: #605D55 3px solid;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+i.tweet-icon {
+  color: var(--primaryFontColor);
+  padding: 0px 3px
+}
+
+i.fa-flag:hover {
+  color: #D79B21;
+}
+
+i.fa-retweet:hover {
+  color: #66BFBF;
+}
+
+i.fa-heart:hover {
+  color: #FF0063;
+}
