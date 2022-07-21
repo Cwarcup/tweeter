@@ -4,11 +4,18 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
-![responsive design](https://media0.giphy.com/media/SABTzBphjBipmEATWn/giphy.gif?cid=790b7611cf479e5db32f190e69aff1b650b416ca135012e0&rid=giphy.gif&ct=g)
+![responsive design](https://media3.giphy.com/media/mDiZD7VUW6GwFevPdi/giphy.gif?cid=790b761160e272e452e23695b76d2d4daa9be4b88194fcba&rid=giphy.gif&ct=g)
+![creating tweets on smaller screens](https://media3.giphy.com/media/VvtGz3jm0fKvcS6x3n/giphy.gif?cid=790b761149230b33b91506df719a1584814939082a62d462&rid=giphy.gif&ct=g)
+> Page will be responsive and mobile-friendly.
 
 ![creating a tweet](https://media2.giphy.com/media/ZT3qb4HKH5RdQcmUJa/giphy.gif?cid=790b761140aa3a5f2bc4b8d7aadfd680a350cfafbd6d5616&rid=giphy.gif&ct=g)
+> Tweets are created without refreshing the page.
 
-![creating tweets on smaller screens](https://media0.giphy.com/media/PY0MD6LxREodQZZmE3/giphy.gif?cid=790b761111b0a644d98a22586aa34b50d030b135d485c7c2&rid=giphy.gif&ct=g)
+![Tweet length limit reached](https://media1.giphy.com/media/DfcKeSzOJxgsnDwSDv/giphy.gif?cid=790b7611a18108961117b965752b27fe7eeb84aa57ee7297&rid=giphy.gif&ct=g)
+![Tweet Validation](https://media0.giphy.com/media/hFT4PnOk9i4oDoMEwx/giphy.gif?cid=790b76113a94506f4c00807266a5b4b05129e36d3e87ba62&rid=giphy.gif&ct=g)
+> Validating tweets before they are created.
+
+
 
 ## Getting Started
 
