@@ -1,39 +1,44 @@
+$BgLightOrange: #F4E2B4;
+$BorderColor: #605D55;
+$DarkOrange: #e76f51;
+$NeutralWhite: #F4F1EC;
+
 .container {
-  background-color: #F4E2B4;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 35px;
+  background-color: $BgLightOrange;
 }
 
 .new-tweet {
   display: flex;
-  padding: 0px 10px 20px 10px;
   flex-direction: column;
   width: 100%;
+  padding: 0px 10px 20px 10px;
 }
 
 #submit-tweet {
-  background-color: #F4E2B4;
   display: flex;
   flex-direction: column;
+  background-color: $BgLightOrange;
 }
 
 form label {
-  color: #605D55;
   padding-bottom: 5px;
   font-weight: bolder;
+  color: $BorderColor;
 }
 
 textarea {
   border: none;
-  background: #F4E2B4;
   height: min-content;
   resize: none;
-  border-bottom: #605D55 3px solid;
   margin-bottom: 10px;
   font-size: 1.5rem;
+  background: $BgLightOrange;
+  border-bottom: $BorderColor 3px solid;
 }
 
 textarea:focus {
@@ -50,8 +55,8 @@ textarea:focus {
 }
 
 button {
-  background-color: #e76f51;
-  color: #F4F1EC;
+  background-color: $DarkOrange;
+  color: $NeutralWhite;
   border: none;
   padding: 4px 10px;
   border-radius: 3px;
@@ -70,30 +75,30 @@ button:hover {
   align-self: center;
   width: 100%;
   min-height: 60px;
-  background: #F4F1EC;
-  border: 1px solid #E76F51;
+  background: $NeutralWhite;
+  border: 1px solid $DarkOrange;
   margin-bottom: 2rem;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .error-message-icon {
-  background: #E76F51;
+  background: $DarkOrange;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
-  color: #FFF;
+  color: $NeutralWhite;
   font-size: 1.6rem;
   margin: 0;
   margin-left: -1px;
 }
 
 .error-message p {
+  display: flex;
+  align-items: center;
   flex: 6;
   padding-left: 1.5rem;
   margin: 0;
-  display: flex;
-  align-items: center;
 }
 
 @media only screen and (min-width: 1024px) {
