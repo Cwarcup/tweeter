@@ -1,11 +1,3 @@
-:root {
-  --headerBackgroundColor: #f4a261;
-  --backgroundColor: #F4E2B4;
-  --primaryFontColor: #264653;
-  --secondaryFontColor: #2a9d8f;
-  --btnColor: #e76f51;
-}
-
 article {
   display: flex;
   flex-direction: column;
@@ -28,7 +20,7 @@ article:hover {
   margin: 15px 0px 5px 0px;
   height: auto;
   width: 100%;
-  padding: 0 20px
+  padding: 0 20px;
 }
 
 header h4.fName {
@@ -72,7 +64,7 @@ p.tweet-text {
 
 i.tweet-icon {
   color: #264653;
-  padding: 0px 3px
+  padding: 0px 3px;
 }
 
 i.fa-flag:hover {

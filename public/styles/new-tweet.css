@@ -24,7 +24,6 @@ form label {
   color: #605D55;
   padding-bottom: 5px;
   font-weight: bolder;
-  ;
 }
 
 textarea {
@@ -47,7 +46,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
 }
 
 button {
@@ -65,7 +64,6 @@ button:hover {
 }
 
 /* error message */
-
 .error-message {
   display: flex;
   align-self: center;
@@ -101,9 +99,7 @@ button:hover {
   .container {
     margin-top: 0;
   }
-
   .error-message {
     margin: 2rem 0;
   }
-
 }

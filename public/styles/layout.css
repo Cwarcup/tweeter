@@ -8,12 +8,11 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   color: #264653;
   background-color: #F4E2B4;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: light 300;
 }
 
@@ -40,11 +39,9 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
-
   #content {
     margin-top: 200px;
   }
-
   #content .profile {
     height: 350px;
     width: 30vw;

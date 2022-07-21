@@ -1,12 +1,19 @@
-header {
+$BgLightOrange: #E9C46A;
+
+
+@mixin height-width {
   height: 520px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  background-color: #E9C46A;
   background-image: url("/images/asfalt-light.png");
+}
+
+header {
+  @include height-width;
+  background-color: $BgLightOrange;
 }
 
 header div .username {
@@ -14,15 +21,4 @@ header div .username {
   color: #FFFFFF;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-}
-
-header .profile {
-  height: 520px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 120px;
-  background-color: #D79B21;
-  background-image: url("/images/asfalt-light.png");
 }

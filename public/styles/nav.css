@@ -1,5 +1,4 @@
 nav {
-  /* nav at top */
   position: absolute;
   top: 0;
   width: 100%;
@@ -8,15 +7,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   padding: 0 1.5em;
   font-size: 1.5em;
   z-index: 1;
-
 }
 
 .header-right {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   display: flex;
   flex-direction: column;
@@ -31,17 +29,16 @@ nav {
 }
 
 .fa-angles-down {
-  color: #e76f51
+  color: #e76f51;
 }
 
 .header-right p {
-  -webkit-transition: padding .5s ease-in-out;
+  -webkit-transition: padding 0.5s ease-in-out;
 }
 
 .header-right p:hover {
   padding-bottom: 15px;
 }
-
 
 .bold {
   font-weight: bold;
