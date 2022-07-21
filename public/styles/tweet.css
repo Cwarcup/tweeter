@@ -23,7 +23,7 @@ article:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--backgroundColor);
+  background-color: #F4E2B4;
   padding: 0px;
   margin: 15px 0px 5px 0px;
   height: auto;
@@ -38,7 +38,7 @@ header h4.fName {
 
 header p.username {
   font-weight: 600;
-  color: var(--secondaryFontColor);
+  color: #2a9d8f;
   opacity: 0.55;
 }
 
@@ -71,7 +71,7 @@ p.tweet-text {
 }
 
 i.tweet-icon {
-  color: var(--primaryFontColor);
+  color: #264653;
   padding: 0px 3px
 }
 

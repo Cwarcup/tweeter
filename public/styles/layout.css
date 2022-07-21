@@ -1,11 +1,3 @@
-:root {
-  --headerBackgroundColor: #f4a261;
-  --backgroundColor: #F4E2B4;
-  --primaryFontColor: #264653;
-  --secondaryFontColor: #2a9d8f;
-  --btnColor: #e76f51;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -16,29 +8,19 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
-  /* color: #545149; */
-  color: var(--primaryFontColor);
-  background-color: var(--backgroundColor);
+  color: #264653;
+  background-color: #F4E2B4;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: light 300;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
 main {
   margin: 0 5%;
-  /* background-color: #f4f1ec; */
-  background-color: var(--backgroundColor);
-  /* color: #545149; */
-  color: var(--primaryFontColor);
+  background-color: #F4E2B4;
+  color: #264653;
   display: flex;
   flex-direction: column;
   align-items: center;

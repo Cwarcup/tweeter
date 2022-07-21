@@ -1,13 +1,5 @@
-:root {
-  --headerBackgroundColor: #f4a261;
-  --backgroundColor: #F4E2B4;
-  --primaryFontColor: #264653;
-  --secondaryFontColor: #2a9d8f;
-  --btnColor: #e76f51;
-}
-
 .container {
-  background-color: var(--backgroundColor);
+  background-color: #F4E2B4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +15,7 @@
 }
 
 #submit-tweet {
-  background-color: var(--backgroundColor);
+  background-color: #F4E2B4;
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +29,7 @@ form label {
 
 textarea {
   border: none;
-  background: var(--backgroundColor);
+  background: #F4E2B4;
   height: min-content;
   resize: none;
   border-bottom: #605D55 3px solid;
@@ -59,7 +51,7 @@ textarea:focus {
 }
 
 button {
-  background-color: var(--btnColor);
+  background-color: #e76f51;
   color: #F4F1EC;
   border: none;
   padding: 4px 10px;

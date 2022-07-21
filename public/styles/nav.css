@@ -1,11 +1,3 @@
-:root {
-  --headerBackgroundColor: #f4a261;
-  --backgroundColor: #F4E2B4;
-  --primaryFontColor: #264653;
-  --secondaryFontColor: #2a9d8f;
-  --btnColor: #e76f51;
-}
-
 nav {
   /* nav at top */
   position: absolute;
@@ -32,9 +24,7 @@ nav {
   gap: 10px;
   font-size: 25px;
   cursor: pointer;
-
 }
-
 
 .header-right p {
   margin: 0;
@@ -60,7 +50,6 @@ nav {
 @media only screen and (min-width: 1024px) {
   nav {
     position: fixed;
-    /* background-color: #4056A1; */
-    background-color: var(--primaryFontColor)
+    background-color: #264653;
   }
 }
