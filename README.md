@@ -25,9 +25,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ---
 
-- Uses flexbox for layout.
-- Responsive design.
-- Sass for styling.
-- jQuery for DOM manipulation.
+- Flexbox for layout and media queries for responsive design.
+- [Sass](https://sass-lang.com/documentation/) for styling.
+- [jQuery](https://api.jquery.com/) for DOM manipulation.
+- Avatars created by [Freepik - Flaticon](https://www.flaticon.com/free-icons/man)
+- Color scheme from [coolors.co](https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51)
 
 ---
+

@@ -37,7 +37,7 @@ main {
   #content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   #content {
     margin-top: 200px;
