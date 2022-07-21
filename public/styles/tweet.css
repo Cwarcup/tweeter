@@ -59,16 +59,20 @@ p.tweet-text {
 i.tweet-icon {
   color: #264653;
   padding: 0px 3px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 i.fa-flag:hover {
   color: #D79B21;
+  transform: scale(1.1);
 }
 
 i.fa-retweet:hover {
   color: #66BFBF;
+  transform: scale(1.1);
 }
 
 i.fa-heart:hover {
   color: #FF0063;
+  transform: scale(1.1);
 }
