@@ -143,5 +143,9 @@ $(function() {
   });
 
 
+  // error message X to close
+  $('.error-message-icon').click(() => {
+    $('.error-message').hide();
+  });
   
 });
