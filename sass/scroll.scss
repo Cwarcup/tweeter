@@ -1,11 +1,14 @@
+$FontDarkBlue: #264653;
+$BgDarkOrange: #e76f51;
+
 #scroll {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  background-color: #264653;
-  color: #e76f51;
+  background-color: $FontDarkBlue;
+  color: $BgDarkOrange;
   cursor: pointer;
   padding: 20px;
   font-size: 18px;

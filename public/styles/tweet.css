@@ -2,13 +2,13 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: #605D55 3px solid;
+  border: #264653 3px solid;
   transition: box-shadow 0.3s ease-in-out;
   margin-bottom: 25px;
 }
 
 article:hover {
-  box-shadow: #605D55 3px 3px 3px;
+  box-shadow: #264653 3px 3px 3px;
 }
 
 .single-tweet header {
@@ -16,7 +16,6 @@ article:hover {
   flex-direction: row;
   justify-content: space-between;
   background-color: #F4E2B4;
-  padding: 0px;
   margin: 15px 0px 5px 0px;
   height: auto;
   width: 100%;
@@ -43,7 +42,7 @@ header div.left-content {
 
 p.tweet-text {
   margin: 0 35px;
-  color: #3d3c37;
+  color: #264653;
   font-size: 1.5rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -51,13 +50,13 @@ p.tweet-text {
 }
 
 .single-tweet footer {
-  font-size: medium;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: medium;
   height: auto;
   width: 98%;
-  border-top: #605D55 3px solid;
+  border-top: #264653 3px solid;
   padding: 10px;
   margin-top: 20px;
 }
